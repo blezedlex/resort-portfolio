@@ -1,0 +1,878 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
+
+/********************
+  GLOBAL SETTINGS
+*********************/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/********************
+        Header 
+*********************/
+
+.header-main {
+  width: 100%;
+  height: 100vh;
+  background: url("/img/resort-bg.jpg") bottom center fixed no-repeat;
+}
+
+.header-container {
+  position: relative;
+  background: #585656;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.4rem;
+}
+
+/********************
+        Logo
+*********************/
+
+.logo {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0.2rem 0.1rem #383737;
+}
+
+.logo a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+
+/********************
+     Navigation
+*********************/
+
+.nav-container__top {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.nav-items__top li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 2.4rem;
+}
+
+.nav-items__top li a {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #9e9d9d;
+  letter-spacing: 0.2rem;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-bottom__container {
+  background: #6b635b;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-items__bottom {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.6rem;
+}
+
+.nav-items__bottom li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 4rem;
+}
+
+.nav-items__bottom li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/********************
+         Hero 
+*********************/
+
+.hero-main {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-main:before,
+.hero-main:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 30%;
+  padding: 20%;
+  border: 2px solid #fff;
+  position: absolute;
+  top: -5.5rem;
+}
+
+.hero-main:before {
+  left: -5%;
+  border-right: 0;
+}
+
+.hero-main:after {
+  right: -5%;
+  border-left: 0;
+}
+
+.hero-title {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.1rem #383737;
+  letter-spacing: 0.5rem;
+}
+
+.hero-description {
+  font-family: "Caveat", cursive;
+  font-size: 3.6rem;
+  padding-top: 1.2rem;
+  text-shadow: 0.1rem 0.2rem #131211;
+  letter-spacing: 0.2rem;
+}
+
+.hero-button {
+  margin-top: 2rem;
+  padding: 1.4rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background: #6b635b;
+  border-radius: 10rem;
+}
+
+.arrow-down {
+  position: absolute;
+  display: block;
+  font-size: 5rem;
+  color: #fff;
+  top: 85%;
+  left: 50%;
+  transform: translate(-85%, -50%);
+  text-shadow: 0.4rem 0.1rem #000;
+}
+
+/********************
+   Resort Features 
+*********************/
+
+.features {
+  width: 100%;
+  height: 100%;
+  background: #6b635b;
+}
+
+.luxury-features {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.features-title {
+  font-size: 2.1rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.4rem;
+}
+
+.features-description {
+  font-size: 1.8rem;
+  padding-top: 2rem;
+}
+
+.features-description p {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/********************
+   Resort Amenities 
+*********************/
+
+.amenities {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.1rem;
+  display: block;
+}
+
+.amenities:before,
+.amenities:after {
+  clear: both;
+}
+
+.amenities-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.amenities-list {
+  float: left;
+  width: 33%;
+  padding-right: 2.3%;
+}
+
+.amenities img {
+  width: 100%;
+}
+
+.card-title {
+  padding: 2rem;
+  font-size: 2rem;
+  word-spacing: 0.2rem;
+  color: #6b635b;
+}
+
+.amenities-list p {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #888787;
+}
+
+.cta-amenities {
+  width: 100%;
+  text-align: center;
+}
+
+.button-availability {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  background: #6b635b;
+  padding: 1.4rem;
+}
+
+/********************
+   Resort Services 
+*********************/
+
+.services {
+  margin-top: 7.4rem;
+  background: #6b635b;
+  width: 100%;
+  height: 100%;
+}
+
+.services-container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.services-container img {
+  width: 45%;
+  float: left;
+  padding: 8rem 2.5rem;
+}
+
+.food-card {
+  width: 45%;
+  color: #fff;
+  float: left;
+  padding: 8rem 2.5rem;
+}
+
+.food-card h3 {
+  font-size: 2.8rem;
+  letter-spacing: 0.5rem;
+  padding-top: 5rem;
+}
+
+.food-card p {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  padding-top: 3rem;
+  line-height: 1.5em;
+  margin-bottom: 6rem;
+}
+
+.button-food {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  background: #585656;
+  padding: 1.7rem;
+  text-align: left;
+}
+
+/********************
+        Footer 
+*********************/
+
+.footer-top,
+.footer-bottom {
+  width: 100%;
+  height: 100%;
+  background: #585656;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-box {
+  width: 33%;
+  display: inline-block;
+  padding: 2.4rem;
+}
+
+.footer-box h3 {
+  font-size: 2.4rem;
+}
+
+.footer-box p {
+  padding-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.footer-bottom {
+  padding: 2.4rem 0;
+  font-weight: 300;
+  padding: 1.8;
+  font-size: 1.2rem;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/********************
+   Media Queries
+*********************/
+
+@media screen and (max-width: 1650px) {
+  .nav-container__top {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .nav-container__top {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1326px) {
+  .hero-title {
+    font-size: 2.9rem;
+  }
+
+  .hero-description {
+    font-size: 3rem;
+  }
+
+  .hero-button {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .nav-container__top {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 2.2rem;
+  }
+
+  .hero-button {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .hero-main:before,
+  .hero-main:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 40%;
+    padding: 25%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -5rem;
+  }
+
+  .hero-main:before {
+    left: -15%;
+    border-right: 0;
+  }
+
+  .hero-main:after {
+    right: -15%;
+    border-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-container__top {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .features-title {
+      font-size: 1.5rem;
+  }
+
+  .features-description {
+      font-size: 1.6rem;
+      line-height: 1.4em;
+  }
+
+  .amenities-list {
+      width: 100%;
+      padding-bottom: 3rem;
+  }
+  
+  .button-availability {
+      font-size: 1.4rem;
+  }
+
+  .hero-button {
+      font-size: 1.8rem;
+  }
+  
+    .hero-main:before,
+  .hero-main:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 30%;
+    padding: 29%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -5.5rem;
+  }
+  .hero-main:before {
+    left: -30%;
+    border-right: 0;
+  }
+
+  .hero-main:after {
+    right: -30%;
+    border-left: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav-container__top {
+    width: 100%;
+  }
+
+  .nav-container__top li a {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    font-size: 2.4rem;
+  }
+
+  .nav-bottom__container li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .hero-main:before,
+  .hero-main:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 30%;
+    padding: 35%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -5.5rem;
+  }
+  .hero-main:before {
+    left: -35%;
+    border-right: 0;
+  }
+
+  .hero-main:after {
+    right: -35%;
+    border-left: 0;
+  }
+
+  .header-main {
+    height: 80vh;
+  }
+
+  .arrow-down {
+    top: 70%;
+    left: 52%;
+    font-size: 3.5rem;
+  }
+
+  .services {
+      margin-top: 3rem;
+      padding-bottom: 5rem;
+  }
+
+  .services-container img {
+      float: none;
+      width: 100%;
+  }
+
+  .footer-container {
+      width: 100%;
+  }
+
+  .food-card {
+      float: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin-top: -12rem;
+  }
+
+  .food-card h3 {
+      font-size: 1.8rem;
+      text-align: center;
+  }
+
+  .food-card p {
+      font-size: 1.6rem;
+      line-height: 1.2em;
+  }
+
+  .button-food {
+      font-size: 1.4rem;    
+  }
+
+  .footer-box h3 {
+      font-size: 1.4rem;
+  }
+
+  .footer-box p {
+      font-size: 1.3rem;
+  }
+
+}
+
+@media screen and (max-width: 632px) {
+  .hero-main:before,
+  .hero-main:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 30%;
+    padding: 40%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -5.5rem;
+  }
+  .hero-main:before {
+    left: -40%;
+    border-right: 0;
+  }
+
+  .hero-main:after {
+    right: -40%;
+    border-left: 0;
+  }
+}
+
+@media screen and (max-width: 582px) {
+
+.logo {
+    font-size: 1.8rem;
+}
+
+  .hero-main:before,
+  .hero-main:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 25%;
+    padding: 43%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -5.5rem;
+  }
+  .hero-main:before {
+    left: -40%;
+    border-right: 0;
+  }
+
+  .hero-main:after {
+    right: -40%;
+    border-left: 0;
+  }
+
+  .arrow-down {
+    top: 72%;
+    left: 52%;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 536px) {
+    .nav-items__top li a {
+      font-size: 1.2rem;
+  }
+
+  .nav-items__bottom li a {
+      font-size: 1.2rem;
+  }
+
+  .hero-main:before,
+  .hero-main:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 25%;
+    padding: 43%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -3.5rem;
+  }
+  .hero-main:before {
+    left: -44%;
+    border-right: 0;
+  }
+
+  .hero-main:after {
+    right: -44%;
+    border-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+    .nav-items__top li a {
+        font-size: 1rem;
+    }
+  
+    .nav-items__bottom li a {
+        font-size: 1rem;
+    }
+  
+    .hero-main:before,
+    .hero-main:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 25%;
+      padding: 43%;
+      border: 2px solid #fff;
+      position: absolute;
+      top: -2.5rem;
+    }
+    .hero-main:before {
+      left: -44%;
+      border-right: 0;
+    }
+  
+    .hero-main:after {
+      right: -44%;
+      border-left: 0;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .header-main {
+        height: 70vh;
+    }
+
+    .hero-main {
+       top: 40%;
+    }
+
+    .arrow-down {
+        top: 60%;
+    }
+    
+    
+    .nav-items__top li a {
+        font-size: .8rem;
+    }
+  
+    .nav-items__bottom li a {
+        font-size: .8rem;
+    }
+  
+    .hero-main:before,
+    .hero-main:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 25%;
+      padding: 43%;
+      border: 2px solid #fff;
+      position: absolute;
+      top: -1rem;
+    }
+    .hero-main:before {
+      left: -44%;
+      border-right: 0;
+    }
+  
+    .hero-main:after {
+      right: -44%;
+      border-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    .nav-items__top li a {
+        width: 100%;
+        font-size: .8rem;
+    }
+  
+    .nav-items__bottom li a {
+        font-size: .8rem;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-description {
+        font-size: 2rem;
+    }
+  
+    .hero-main:before,
+    .hero-main:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 25%;
+      padding: 45%;
+      border: 2px solid #fff;
+      position: absolute;
+      top: -1rem;
+    }
+    .hero-main:before {
+      left: -44%;
+      border-right: 0;
+    }
+  
+    .hero-main:after {
+      right: -44%;
+      border-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    .nav-items__top li a {
+        width: 100%;
+        font-size: .7rem;
+    }
+  
+    .nav-items__bottom li a {
+        font-size: .7rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    
+    .nav-items__top li a {
+        width: 100%;
+        font-size: .6rem;
+    }
+  
+    .nav-items__bottom li a {
+        font-size: .6rem;
+    }
+
+    .hero-title {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1.8rem;
+    }
+
+}
