@@ -904,6 +904,10 @@ hr {
     left: 25rem;
   }
 
+  .arrow-down {
+    top: 85%;
+  }
+
 }
 
 @media screen and (max-width: 475px) {
@@ -926,7 +930,7 @@ hr {
   }
 
   .arrow-down {
-    top: 60%;
+    top: 80%;
   }
 
   .nav-items__top li a {
