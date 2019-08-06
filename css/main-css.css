@@ -854,6 +854,17 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
+  .header-main {
+    height: 80vh;
+    background-position: bottom;
+    background-attachment: initial;
+
+  }
+
+  .hero-main {
+    padding-top: -35rem;
+  }
+
   .nav-items__top li a {
     font-size: 1rem;
   }
