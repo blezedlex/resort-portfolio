@@ -906,8 +906,11 @@ hr {
 
 }
 
-@media screen and (max-width: 472px) {
+@media screen and (max-width: 475px) {
 
+  .header-main {
+    height: 95vh;
+  }
      
   .footer-container .footer-box {
     display: block;  
@@ -917,10 +920,7 @@ hr {
 }
 
 @media screen and (max-width: 462px) {
-  .header-main {
-    height: 70vh;
-  }
-
+  
   .hero-main {
     top: 40%;
   }
