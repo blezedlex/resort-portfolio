@@ -908,6 +908,12 @@ hr {
     top: 85%;
   }
 
+  .services {
+    text-align: center;
+  }
+
+  
+
 }
 
 @media screen and (max-width: 475px) {
