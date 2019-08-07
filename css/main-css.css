@@ -94,6 +94,7 @@ body {
   list-style: none;
   display: inline-block;
   padding-left: 2.4rem;
+  position: relative;
 }
 
 .nav-items__top li a {
@@ -104,6 +105,29 @@ body {
   color: #9e9d9d;
   letter-spacing: 0.2rem;
 }
+
+.nav-items__top li a:hover {
+  color: #fff;
+}
+
+.nav-items__top li a::after {
+  content: '';
+  display: block;
+  height: .2rem;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  transition: all ease-in-out 550ms;
+
+}
+
+.nav-items__top li a:hover::after {
+  width: 75%;
+}
+
+
+
+
 
 .nav-left {
   float: left;
